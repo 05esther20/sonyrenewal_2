@@ -1,0 +1,32 @@
+body{
+    font-family: 'Noto Sans KR',sans-serif;
+    letter-spacing: -0.085em;}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color:#333333;
+}
+    
+h1{
+    margin-bottom: 0;
+}
+ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.sr_only{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    }
+.br20{
+    border-radius: 20px !important;    
+}
+.zup{
+    z-index: 1000 !important;
+}
