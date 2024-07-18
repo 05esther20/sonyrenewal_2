@@ -48,7 +48,7 @@
 <body>
     <!-- 공통컨텐츠 : header, footer, aside -->
         <header id="hd" class="position-relative zup "> 
-            <div class="inner d-flex py-3 align-items-center justify-content-between">
+            <div class="inner d-flex py-4 align-items-center justify-content-between">
                 <h1 class="mainlogo"><a href="/" class="d-block"><img src="./img/svg/sonyMainlogo.svg" alt="" class="d-block"></a></h1>
                 <!-- ul.gnb>li*5>a{대메뉴$} -->
 
@@ -128,6 +128,81 @@
 
             </div>
         </section>
-</body>
+
+
+        <!-- 제품메뉴 -->
+
+        <section class="inner" id="product">
+            <ul class="d-flex justify-content-between py-4">
+                <li class="overflow-hidden col">
+                    <a href="#">
+                        <strong class="d-block">VIDEO CAMERA</strong>
+                        <span class="d-block">디지털 영상 쵤영의 새로운 지평을 연 소니</span>
+                        <img src="./img/videoCamera.png" >
+                    </a>
+                </li>
+                <li class="col">
+                    <a href="#">
+                        <strong class="d-block">CAMERA</strong>
+                        <span class="d-block">눈으로 볼 수 없던 세계로 가는 문</span>
+                        <img src="./img/menuCamera.png">
+                    </a>
+                </li>
+                <li  class="col">
+                    <a href="#">
+                        <strong class="d-block">AUIDO</strong>
+                        <span class="d-block">놀랍도록 사실적이고 몰입적인 사운드</span>
+                        <img src="./img/audio.png">
+                    </a>
+                </li>
+                <li  class="col">
+                    <a href="#">
+                        <strong class="d-block">PlayStation®</strong>
+                        <span class="d-block">경계 너머의 새로운 세상을 탐험하다</span>
+                        <img src="./img/menuPs5.png">
+                    </a>
+                </li>
+                <li  class="col">
+                    <a href="#">
+                        <strong class="d-block">ACCESSORY</strong>
+                        <span class="d-block">배터리, 자가수리키트, 가방 등</span>
+                        <img src="./img/accessory.png">
+                    </a>
+                </li>
+
+
+            </ul>
+        </section>
+
+
+        <!-- ps5 홍보비디오 -->
+
+        <section id="video">
+            <div class="ps5bg ">
+                <div class="text-center container ">
+                            
+                        <div class="section_title py-5">
+                                <img src="./img/svg/PS5logo.svg" alt="ps5로고" class="py-1 pb-3">
+                                <p class="text-white pb-3">우리의 도착지에 한계란 없습니다. 우리는 모두 탐험가입니다.</p>
+                               
+                        </div>
+                        <div class="video-container" onclick="playVideo()">
+                            <img src="./img/ps5Video.PNG" alt="Video Thumbnail" class="thumbnail">
+                            <div class="iframe-container" id="iframeContainer">
+                                <iframe id="youtubeIframe" width="1296" height="550" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+        </section>
+
+        <script>
+            function playVideo() {
+                var iframeContainer = document.getElementById('iframeContainer');
+                var youtubeIframe = document.getElementById('youtubeIframe');
+                youtubeIframe.src = 'https://www.youtube.com/embed/VV6dJjdWvjk?autoplay=1';
+                iframeContainer.style.display = 'block';
+            }
+        </script>
+
+    </body>
 </html>
 
