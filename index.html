@@ -113,9 +113,10 @@
             </div>
         </header>
         <section id="banner">
-            <div class="inner d-flex justify-content-between">
-                <div class="swiper br20">
-                       <img src="./img/mainCamera.jpg">
+            <div class="inner mx-auto  d-flex justify-content-between">
+                <div class="swiper br20 col me-3">
+                        <img src="./img/sonyAlphalogo.png" >
+                       <!-- <img src="./img/mainCamera.jpg"> -->
                 </div>
                 <div class="rightBananer d-flex flex-column justify-content-between">
                     <div>
@@ -132,45 +133,58 @@
 
         <!-- 제품메뉴 -->
 
-        <section class="inner" id="product">
+        <section class="inner mx-auto" id="product">
             <ul class="d-flex justify-content-between py-4">
-                <li class="overflow-hidden col">
-                    <a href="#">
-                        <strong class="d-block">VIDEO CAMERA</strong>
-                        <span class="d-block">디지털 영상 쵤영의 새로운 지평을 연 소니</span>
-                        <img src="./img/videoCamera.png" >
-                    </a>
-                </li>
-                <li class="col">
-                    <a href="#">
-                        <strong class="d-block">CAMERA</strong>
-                        <span class="d-block">눈으로 볼 수 없던 세계로 가는 문</span>
-                        <img src="./img/menuCamera.png">
-                    </a>
-                </li>
-                <li  class="col">
-                    <a href="#">
-                        <strong class="d-block">AUIDO</strong>
-                        <span class="d-block">놀랍도록 사실적이고 몰입적인 사운드</span>
-                        <img src="./img/audio.png">
-                    </a>
-                </li>
-                <li  class="col">
-                    <a href="#">
-                        <strong class="d-block">PlayStation®</strong>
-                        <span class="d-block">경계 너머의 새로운 세상을 탐험하다</span>
-                        <img src="./img/menuPs5.png">
-                    </a>
-                </li>
-                <li  class="col">
-                    <a href="#">
-                        <strong class="d-block">ACCESSORY</strong>
-                        <span class="d-block">배터리, 자가수리키트, 가방 등</span>
-                        <img src="./img/accessory.png">
-                    </a>
-                </li>
+                
+                
+                    <li class="overflow-hidden col video_camera gradient-box mx-2">
+                        <a href="#" class="d-block">
+                            <strong class="d-block mx-4 mt-5 product_title">VIDEO CAMERA</strong>
+                            <span class="d-block mx-4 product_ex">디지털 영상 쵤영의 새로운 지평을 연 소니</span>
+                            <img src="./img/videoCamera.png" class="d-flex " >
+                        </a>
+                    </li>
+              
+                    
+                
+                    <li class="col gradient-box mx-2 product_camera">
+                        <a href="#">
+                            <strong class="d-block mx-4 mt-5 product_title">CAMERA</strong>
+                            <span class="d-block mx-4 product_ex">눈으로 볼 수 없던 세계로 가는 문</span>
+                            <img src="./img/menuCamera.png">
+                        </a>
+                    </li>
+                 
 
 
+              
+                    <li  class="col gradient-box mx-2 product_audio">
+                        <a href="#">
+                            <strong class="d-block mx-4 mt-5 product_title">AUIDO</strong>
+                            <span class="d-block mx-4 product_ex">놀랍도록 사실적이고 몰입적인 사운드</span>
+                            <img src="./img/audio.png">
+                        </a>
+                    </li>
+            
+
+
+             
+                    <li  class="col  gradient-box  mx-2 product_ps5">
+                        <a href="#">
+                            <strong class="d-block mx-4 mt-5 product_title">PlayStation®</strong>
+                            <span class="d-block mx-4 product_ex">경계 너머의 새로운 세상을 탐험하다</span>
+                            <img src="./img/menuPs5.png">
+                        </a>
+                    </li>
+               
+                    <li  class="col  gradient-box  mx-2 product_acc">
+                        <a href="#">
+                            <strong class="d-block mx-4 mt-5 product_title">ACCESSORY</strong>
+                            <span class="d-block mx-4 product_ex">배터리, 자가수리키트, 가방 등</span>
+                            <img src="./img/accessory.png" >
+                        </a>
+                    </li>
+               
             </ul>
         </section>
 
@@ -194,7 +208,17 @@
                         </div>
         </section>
 
+        <!-- 자세히보기버튼  -->
+        <div class="readMorebox">
+            <p class="mb-1">
+                <a href="#" class="text-white">자세히보기</a>
+            </p>
+        </div>
+
+
+
         <script>
+            // 유튜브 영상 관리 태그
             function playVideo() {
                 var iframeContainer = document.getElementById('iframeContainer');
                 var youtubeIframe = document.getElementById('youtubeIframe');
@@ -205,4 +229,5 @@
 
     </body>
 </html>
+
 
