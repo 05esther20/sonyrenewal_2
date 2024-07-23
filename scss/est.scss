@@ -16,7 +16,8 @@
             &:hover{
                 //대메뉴에 롤오버시 소메뉴 노출
                 ul{
-                    max-height: 180px !important;
+                    height: 200px !important;
+                    transition: 0.5s;
                 }
             }
             a{
@@ -25,6 +26,19 @@
             }
             .d1{
                 //대메뉴 li
+
+                &:first-child{
+                    ul{
+                        border-radius: 0 0 0 20px;
+                    }
+
+                }
+                &:last-child{
+                    ul{
+                        border-radius: 0 0 20px 0;
+                    }
+
+                }
                
                 .gnb_d1_a{
                     //대메뉴
@@ -37,7 +51,7 @@
                 min-width: 80px;
                 white-space: nowrap;
                 //white-space: nowrap;은 CSS 속성으로, 요소의 텍스트가 줄 바꿈되지 않도록 지정한다.
-                max-height: 0px;
+                height: 0px;
                 transition: max-height 0.5s;
                 padding: 0 1rem !important; 
                 border: 0 !important;
@@ -46,7 +60,8 @@
                 overflow: hidden;
                 li{
                     text-align:center;
-                    a{
+                    a{  
+                        line-height: 1.8;
                         font-size: 1rem !important;
                         font-weight: 400 !important;
                         &:hover{

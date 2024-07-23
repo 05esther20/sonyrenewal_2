@@ -12,11 +12,18 @@ header ul {
   margin-top: 1rem;
 }
 header ul.gnb:hover ul {
-  max-height: 180px !important;
+  height: 200px !important;
+  transition: 0.5s;
 }
 header ul.gnb a {
   font-size: 1rem;
   font-weight: bold;
+}
+header ul.gnb .d1:first-child ul {
+  border-radius: 0 0 0 20px;
+}
+header ul.gnb .d1:last-child ul {
+  border-radius: 0 0 20px 0;
 }
 header ul.gnb .d1 .gnb_d1_a {
   color: black;
@@ -25,7 +32,7 @@ header ul.gnb .d1 .gnb_d1_a {
 header ul.gnb ul {
   min-width: 80px;
   white-space: nowrap;
-  max-height: 0px;
+  height: 0px;
   transition: max-height 0.5s;
   padding: 0 1rem !important;
   border: 0 !important;
@@ -37,6 +44,7 @@ header ul.gnb ul li {
   text-align: center;
 }
 header ul.gnb ul li a {
+  line-height: 1.8;
   font-size: 1rem !important;
   font-weight: 400 !important;
 }
