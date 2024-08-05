@@ -10,6 +10,32 @@
     }
     header {
         
+        #allMenu{ display: none ;}
+                    @media (max-width:1024px){
+                        #allMenu{ display: block ; order:1}  
+                        #hd h1{order:2}
+                        .gnb{ display: none !important;}
+                        .iconMenu > li:not(.mypageicon){
+                            display: none;
+                        } 
+                        .iconMenu{
+                            order:3
+                        }
+                        .rightBananer{
+                            display: none !important;
+                        }
+                        #banner .swiper{
+                            margin: 0 auto !important;
+                            border-radius: 0 !important;
+                            height: 142vw;
+                            background-position: -32.2vw bottom !important;
+                            background-size: 131% !important;
+
+                        }
+                    }
+                    
+
+
         ul{  
         margin-top: 1rem;
         &.gnb{
@@ -93,6 +119,8 @@
 
 
 
+//제품 카테고리
+
 
    #product{
     
@@ -170,6 +198,10 @@
         }
     }
    }
+
+
+
+//  비디오
    #video{
         .ps5bg{
             background: url('../img/ps5Bg.jpg') no-repeat center;
@@ -184,7 +216,7 @@
             }
         }
 
-//    비디오
+
         .thumbnail {
             width: 100%;
             cursor: pointer;
@@ -211,6 +243,11 @@
               
                 height: 550px;
             }
+            .playButton{
+                width: 84px;
+                height: auto;
+            }
+    
         }
         .thumbnail {
             width: 100%;
@@ -223,7 +260,7 @@
             width: 100%;
             height: 100%;
         }    
-
+    
     }
 
     // 자세히보기 버튼
@@ -244,12 +281,30 @@
         .swiper{
 
             &.br20{
-              background: url(../img/mainCamera.jpg) no-repeat center;
+              background: url(../img/mainCamera.jpg) no-repeat center #000;
               background-size: 100%;
             }
         }
     }
+
+    // 이벤트/아카데미 앞 장식요소
+    .beforebar:before{
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 25px;
+        background-color: #000;
+        margin-right: 5px;
+        border-radius: 10px;
+    }
     
-   
+
+    // 아카데미
+    .academy_pic1{
+      
+    }
+   .academy_pic2{
+      
+   }
    
 

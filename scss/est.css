@@ -8,6 +8,37 @@
   height: auto;
 }
 
+header #allMenu {
+  display: none;
+}
+@media (max-width: 1024px) {
+  header #allMenu {
+    display: block;
+    order: 1;
+  }
+  header #hd h1 {
+    order: 2;
+  }
+  header .gnb {
+    display: none !important;
+  }
+  header .iconMenu > li:not(.mypageicon) {
+    display: none;
+  }
+  header .iconMenu {
+    order: 3;
+  }
+  header .rightBananer {
+    display: none !important;
+  }
+  header #banner .swiper {
+    margin: 0 auto !important;
+    border-radius: 0 !important;
+    height: 142vw;
+    background-position: -32.2vw bottom !important;
+    background-size: 131% !important;
+  }
+}
 header ul {
   margin-top: 1rem;
 }
@@ -133,6 +164,10 @@ header ul.iconMenu li i {
   border-radius: 20px;
   height: 550px;
 }
+#video .video-container .playButton {
+  width: 84px;
+  height: auto;
+}
 #video .thumbnail {
   width: 100%;
 }
@@ -159,6 +194,16 @@ header ul.iconMenu li i {
 }
 
 #banner .swiper.br20 {
-  background: url(../img/mainCamera.jpg) no-repeat center;
+  background: url(../img/mainCamera.jpg) no-repeat center #000;
   background-size: 100%;
+}
+
+.beforebar:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 25px;
+  background-color: #000;
+  margin-right: 5px;
+  border-radius: 10px;
 }
