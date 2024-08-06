@@ -203,7 +203,29 @@ header ul.iconMenu li i {
   display: inline-block;
   width: 7px;
   height: 25px;
-  background-color: #000;
+  background-color: #6A6A6A;
   margin-right: 5px;
   border-radius: 10px;
+}
+
+.afterbar:after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin-left: 13px;
+  background-color: #fff;
+}
+
+#fnq .fnqtxt {
+  white-space: nowrap;
+}
+
+#footer {
+  background-color: #000;
+  color: #fff;
+}
+#footer .sonyfooterlogo {
+  width: 107px;
+  height: 20px;
 }

@@ -287,24 +287,52 @@
         }
     }
 
-    // 이벤트/아카데미 앞 장식요소
+    // 이벤트,아카데미 앞 장식요소
     .beforebar:before{
         content: "";
         display: inline-block;
         width: 7px;
         height: 25px;
-        background-color: #000;
+        background-color: #6A6A6A;
         margin-right: 5px;
         border-radius: 10px;
     }
     
+    .afterbar:after{
+        content: "";
+        display: inline-block;
+        width: 1px;
+        height: 10px;
+        margin-left: 13px;
+        background-color: #fff;
+        
+    }
 
     // 아카데미
     .academy_pic1{
       
     }
-   .academy_pic2{
+    .academy_pic2{
       
    }
+
+   #fnq{
+    .fnqtxt{
+        white-space:nowrap;
+    }
+
+   }
    
+   #footer{
+
+    background-color: #000;
+    color: #fff;
+    .sonyfooterlogo{
+        width: 107px;
+        height: 20px;
+        }
+    
+    
+    
+    }
 
