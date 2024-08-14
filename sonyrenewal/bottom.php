@@ -29,8 +29,8 @@
                             <li><a href="#" class="text-white">사이트맵</a></li>
                         </ul>
                         <p> 사업장주소 : 서울특별시 영등포구 국제금융로 10 원 아이에프씨 24F 사업자 등록번호 : 106-81-23810 통신판매번호 2012-서울영등포-1038 소니코리아㈜ <br>
-                            대표이사 : Okura Kikuo개인정보관리책임자 : Okura KikuoTEL : 소니코리아 고객센터 1588-0911E-MAIL : cshelp@sony.co.krCopyright <br>
-                            © Sony Korea Corporation. All rights reserved.
+                            대표이사 : Okura Kikuo개인정보관리책임자 : Okura KikuoTEL : 소니코리아 고객센터 1588-0911E-MAIL : cshelp@sony.co.kr <br> 
+                            Copyright © Sony Korea Corporation. All rights reserved.
                         </p>
 
                 </div>

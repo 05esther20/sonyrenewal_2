@@ -8,6 +8,20 @@
   height: auto;
 }
 
+.title_big {
+  font-size: 2rem;
+}
+
+.mainsubtitle {
+  font-size: 1.2rem;
+}
+
+.mainbigtxt {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
 header #allMenu {
   display: none;
 }
@@ -89,10 +103,26 @@ header ul.iconMenu li i {
   margin-left: 1rem;
 }
 
+#banner .swiper {
+  border-radius: 20px;
+  overflow: hidden;
+}
 #banner .swiper .br20 {
   background: url(/sonyrenewal/img/mainCamera.jpg) no-repeat center #000;
   background-size: 100%;
   height: 100%;
+}
+#banner .swiper .br21 {
+  background: url(/sonyrenewal/img/mainCamera2.jpg) no-repeat center #A982C1;
+  background-size: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+#banner .swiper .br22 {
+  background: url(/sonyrenewal/img/mainCamera3.jpg) no-repeat center #000;
+  background-size: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 #banner .swiper .swiper-button-prev {
   color: white;
@@ -105,7 +135,7 @@ header ul.iconMenu li i {
 }
 
 #product {
-  margin-bottom: 90px;
+  margin-bottom: 30px;
 }
 #product li img {
   max-width: 450px;
@@ -172,6 +202,25 @@ header ul.iconMenu li i {
   display: none;
 }
 
+#video .swiper-button-prev,
+#video .swiper-button-next {
+  border: 4px solid white !important;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+#video .swiper-button-prev:after,
+#video .swiper-button-next:after {
+  color: #fff !important;
+  font-size: 18px;
+  font-weight: bolder;
+}
+#video .swiper-button-prev {
+  transform: translate(-33px, -19px);
+}
+#video .swiper-button-next {
+  transform: translate(33px, -19px);
+}
 #video .swiper {
   overflow: visible !important;
 }
@@ -183,7 +232,7 @@ header ul.iconMenu li i {
   width: 100%;
   height: 190px;
   display: block;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 #video .ps5bg {
   margin: 0px auto;
@@ -248,6 +297,10 @@ header ul.iconMenu li i {
   height: 100%;
 }
 
+.controllerimg {
+  height: 20rem;
+}
+
 .consoletitle {
   font-size: 2rem;
   font-weight: bold;
@@ -262,13 +315,13 @@ header ul.iconMenu li i {
 }
 
 .readMorebox {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   color: #fff;
   background: #000;
-  border-radius: 30px;
-  width: 155px;
-  height: 41px;
+  border-radius: 20px;
+  width: 131px;
+  height: 38px;
   display: flex;
   justify-content: center;
   align-items: center;

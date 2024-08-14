@@ -51,7 +51,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
                     <li class="overflow-hidden col video_camera gradient-box mx-2">
                         <a href="#" class="d-block">
                             <strong class="d-block mx-4 mt-5 product_title">VIDEO CAMERA</strong>
-                            <span class="d-block mx-4 product_ex">디지털 영상 쵤영의 새로운 지평을 연 소니</span>
+                            <span class="d-block mx-4 product_ex">디지털 영상 촬영의 새로운 지평을 연 소니</span>
                             <img src="./img/videoCamera.png" class="d-flex " >
                         </a>
                     </li>
@@ -233,7 +233,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
         <!-- ps5 게임콘솔 -->
         <div class="text-center mt-5 pt-5">
             <p class="mb-5 consoletitle">한번도 경험해보지 못한 플레이™ </p>
-            <a href="https://www.playstation.com/ko-kr/accessories/"> <img src="./img/ps5Controller.png"> </a>
+            <a href="https://www.playstation.com/ko-kr/accessories/"> <img src="./img/ps5Controller.png" class="controllerimg"> </a>
             <p class="mb-0 mt-5 consoleex">초고속 SSD가 선사하는 빛처럼 빠른 로딩 속도와 햅틱 피드백, 적응형 트리거, 3D오디오가 선사하는 </p>
             <p class="mb-5 consoleex">더욱 심도 있는 몰입감을 경험하면서 환상적인 차세대 PlayStation 게임을 마음껏 즐겨보세요.</p>
         </div>
@@ -290,6 +290,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
         <!-- 소니아카데미 -->
 
         <div class="academy container ">
+
             <strong class="d-block mb-4 beforebar"><span class="academymaintitle">SONY Academy</span></strong>
             <ul class="row">
                
@@ -312,12 +313,13 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
                                 
                                 <div class="position-absolute start-0 top-0 w-100 h-100 text-white d-flex flex-column justify-content-center align-items-center">
                                     <div class="text-start">
-                                        <p class="d-block mb-0">사진실습:[사진실습중급]</p>
-                                        <p class="mb-0 phototitle"><strong>스튜디오 인물 실루엣 촬영</strong></p>
+                                        <p class="d-block mb-0">영상실습:[영상실습중급]</p>
+                                        <p class="mb-0 phototitle"><strong>스튜디오 인물 실루엣 영상 촬영</strong></p>
                                     </div>
                                 </div>
                             </a>
                         </li>
+                        
                     </ul>
                 </li>
 
