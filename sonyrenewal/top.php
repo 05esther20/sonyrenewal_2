@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="kr">
 <head>
@@ -70,7 +71,6 @@
                                 <li><a href="/cms/bbs/board.php?bo_table=gallery&sca=비디오카메라" class="">비디오 카메라</a></li>
                                 <li><a href="/cms/bbs/board.php?bo_table=gallery&sca=오디오" class="">오디오</a></li>
                                 <li><a href="/cms/bbs/board.php?bo_table=gallery&sca=악세사리" class="">액세서리</a></li>
-                                <li><a href="/cms/bbs/board.php?bo_table=gallery&sca=Playstation®" class="">Playstation®</a></li>
                             </ul>
                     </li>
                     <li class="px-5 position-relative d1">
@@ -106,19 +106,36 @@
                 </ul>
 
 
-                <!-- 메인 -->
                 <!-- ul.iconMenu>li*3>i -->
                 <ul class="iconMenu d-flex mt-0">
                     <li class="searchicon"><i class="ms-3"><img src="/sonyrenewal/img/svg/search.svg" alt=""></i><span class="sr_only">검색</span></li>
-                    <li class="mypageicon">
-                    <?php if ($is_member) {  ?>
-                        <a href="<?php echo G5_BBS_URL ?>/logout.php?url=/sonyrenewal"><i class="ms-3"><img src="/sonyrenewal/img/svg/person.svg" alt="">로그아웃</i><span class="sr_only">로그아웃</span><a>
-                    <?php } else {  ?>
-                        <a href="<?php echo G5_BBS_URL ?>/login.php?url=/sonyrenewal"><i class="ms-3"><img src="/sonyrenewal/img/svg/person.svg" alt="">로그인</i><span class="sr_only">로그인</span></a>
-                    <?php } ?>
+                    <li class="mypageicon position-relative">
+                        <a href="#none"><i class="ms-3"><img src="/sonyrenewal/img/svg/person.svg" alt=""></i><span class="sr_only">마이페이지</span></a>
+                        <div class='position-absolute top-100 start-0 bg-white '>
+                            <ul>
+                            <?php if ($is_member) {  ?>
+                                <li><a href="<?php echo G5_BBS_URL ?>/logout.php?url=/sonyrenewal">로그아웃<a></li>
+                                <li><a href="#none">정보수정</a></li>
+                            <?php } else {  ?>
+                                <li><a href="<?php echo G5_BBS_URL ?>/login.php?url=/sonyrenewal">로그인</a></li>
+                                <li><a href="<?php echo G5_BBS_URL ?>/register.php?url=/sonyrenewal">회원가입</a></li>
+                            <?php } ?>
+                            </ul>
+                        </div>
                     </li>
                     <li class="carticon"><i class="ms-3"><img src="/sonyrenewal/img/svg/shoppingbag.svg" alt=""></i><span class="sr_only">장바구니</span></li>
                 </ul>
             </div>
         </header>
-        <div class="<?php echo $bo_table ? 'inner mx-auto' : ''; ?>">
+        <script>
+          function toggleShowClass() {
+          
+                const innerDivElement = document.querySelector('.mypageicon div');
+                
+                innerDivElement.classList.toggle('d-block');
+          }
+
+document.querySelector('.mypageicon a').addEventListener('click', toggleShowClass);
+
+            </script>
+        <div class="<?php echo $bo_table ? 'inner mx-auto minheight' : ''; ?>">

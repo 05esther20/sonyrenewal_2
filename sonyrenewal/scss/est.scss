@@ -117,6 +117,31 @@
    }
 
 
+   //메인
+
+#banner{
+    .swiper{
+
+        .br20{
+          background: url(/sonyrenewal/img/mainCamera.jpg) no-repeat center #000;
+          background-size: 100%;
+          height: 100%;
+        }
+        .swiper-button-prev{
+            color: white;
+        }
+        .swiper-button-next{
+            color: white;
+        }
+    }
+    .rightBananer{
+        .submtitle{
+            font-size: 1.5rem !important;
+        }
+    }
+}
+
+
 
 
 //제품 카테고리
@@ -124,6 +149,7 @@
 
    #product{
     
+    margin-bottom: 90px;
 
     li{
         img{
@@ -199,20 +225,71 @@
     }
    }
 
+.fa + .sound_only{
+    position: unset !important;
+    font-size: 16px !important;
+    overflow: visible !important;
+    width: auto !important;
+    height: auto !important;
+    line-height: 1 !important;
 
+}
+.btn_bo_user li{
+    width: auto !important;
+}
+.rightBannerlist0{
+    margin-bottom: 1rem;
+}
+.mypageicon{
+    >div{
+        display: none;
+    }
+}
 
 //  비디오
    #video{
-        .ps5bg{
-            background: url('../img/ps5Bg.jpg') no-repeat center;
-            background-size: 100%;
-            height: 860px;
-
+    .swiper{
+        overflow: visible !important;
+        
+        .swiper-slide{
+            max-width:335px;
+            width:60vw;
+            img{
+                width:100%;
+                height: 190px;
+                display: block;
+                border-radius: 20px;
+            }
         }
+        }
+
+    .ps5bg {
+        margin: 0px auto;
+        padding: 70px 30px;
+        background: linear-gradient(-45deg, #4E4462, #4B5388, #A982C1, #91DAE3, #3E6D96,);
+        background-size: 400% 400%;
+        animation: gradient 6s ease infinite;
+    }
+    @keyframes gradient {
+        0% {
+         background-position: 0% 50%;
+        }
+        50% {
+         background-position: 100% 50%;
+        }
+        100% {
+         background-position: 0% 50%;
+        }
+    }
+
+
         .section_title{
             img{
             max-width:250px;
             width:25vw;
+            }
+            .ps5title{
+                font-size: 1.2rem;
             }
         }
 
@@ -263,6 +340,20 @@
     
     }
 
+      // ps 게임콘솔
+      .consoletitle{
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .consoleex{
+        font-size: 1rem !important;
+      }
+      .cosoleblank{
+        margin-bottom: 255px;
+      }
+
+
+        
     // 자세히보기 버튼
     .readMorebox {
         font-size: 18px;
@@ -277,15 +368,22 @@
         align-items: center;
     }
 
-    #banner{
-        .swiper{
-
-            &.br20{
-              background: url(../img/mainCamera.jpg) no-repeat center #000;
-              background-size: 100%;
-            }
+    //이벤트
+    .event{
+        margin-bottom: 320px;
         }
-    }
+    .eventbkank{
+        margin-bottom: 320px;
+        }
+
+        .eventtitle{
+            font-size:2rem;
+        }
+        .eventmaintxt{
+            font-size:1.2rem;
+        }
+    
+
 
     // 이벤트,아카데미 앞 장식요소
     .beforebar:before{
@@ -309,18 +407,54 @@
     }
 
     // 아카데미
+    .academy{
+        margin-bottom: 300px;
+    
+    .academymaintitle{
+        font-size: 2rem;
+    }
     .academy_pic1{
       
     }
     .academy_pic2{
       
-   }
+     }
+   
+     .phototitle{
+        font-size:1.2rem;
+     }
 
+
+    }
    #fnq{
+    margin-bottom: 110px;
     .fnqtxt{
         white-space:nowrap;
+        font-size: 1rem;
     }
-
+    .fnqtitle{
+        font-size: 2.5rem;
+    
+    }
+    .noticeicon{
+        width: auto;
+        height: 60px;
+    }
+    .shopicon{
+        width: auto;
+        height: 60px;
+    }
+    .coustomericon{
+        width: auto;
+        height: 60px;
+    }
+    .supporticon{
+        width: auto;
+        height: 60px;
+    }
+    .fnqblank{
+        margin-right: 10rem;
+    }
    }
    
    #footer{
@@ -332,7 +466,50 @@
         height: 20px;
         }
     
+    .footerex{
+        font-size: 0.9rem;
+    }
     
     
     }
 
+    //추가페이지
+
+    #mb_login{
+        max-width:385px;
+        margin: 0 auto;
+        min-height:calc(100vh - 397px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        .logintxt{
+            font-size:1.2rem;
+            font-weight: 600;
+        }
+
+        .logintitle{
+            font-size:2rem;
+            font-weight: bold;
+        }
+        .frm_input{
+            border-radius: 5px;
+            border-color: #ccc;
+            border-width: 1px;
+            line-height: 40px;
+            width: 300px;
+        }
+        .loginbutton{
+            height: 50px;
+            border-radius: 10px;
+            border: 0;
+        }
+        .sound_only{
+            font-size: 0;
+            line-height: 0;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+    }
+  
