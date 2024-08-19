@@ -33,9 +33,6 @@ header #allMenu {
   header #hd h1 {
     order: 2;
   }
-  header .gnb {
-    display: none !important;
-  }
   header .iconMenu > li:not(.mypageicon) {
     display: none;
   }
@@ -56,9 +53,11 @@ header #allMenu {
 header ul {
   margin-top: 1rem;
 }
-header ul.gnb:hover ul {
-  height: 200px !important;
-  transition: 0.5s;
+@media (min-width: 991px) {
+  header ul.gnb:hover ul {
+    height: 200px !important;
+    transition: 0.5s;
+  }
 }
 header ul.gnb a {
   font-size: 1rem;

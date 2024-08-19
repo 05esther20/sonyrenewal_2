@@ -35,7 +35,8 @@
     <link href="//cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
     <!-- 그리드 시스템 -->
     <link href="/sonyrenewal/lib/bootstrap/bootstrap.min.css" rel="stylesheet" >
-
+    <script src='/sonyrenewal/lib/bootstrap/bootstrap.bundle.js'></script>
+    
     <!-- 플러그인 -->
     <link rel="stylesheet" href="/sonyrenewal/lib/swiper/swiper-bundle.min.css"/>
     <script src="/sonyrenewal/lib/swiper/swiper-bundle.min.js"></script>
@@ -46,84 +47,89 @@
     <!-- 커스터마이징 -->
     <link rel="stylesheet" href="/sonyrenewal/css/common.min.css">
     <link rel="stylesheet" href="/sonyrenewal/css/est.min.css">
+
+    <link rel="stylesheet" href="/sonyrenewal/css/rwd.min.css">
 </head>
 <body>
 
     <!-- 헤더 -->
-        <header id="hd" class="position-relative zup bg-white"> 
-            <div class="inner d-flex py-4 align-items-center justify-content-between mx-auto">
-                <h1 class="mainlogo"><a href="/sonyrenewal" class="d-block"><img src="/sonyrenewal/img/svg/sonyMainlogo.svg" alt="" class="d-block"></a></h1>
+        <header id="hd" class="position-relative zup bg-white  "> 
+            <div class="inner py-4 navbar navbar-expand-lg align-items-center justify-content-between mx-auto">
+                <h1 class="mainlogo order-2 order-lg-1"><a href="/sonyrenewal" class="d-block"><img src="/sonyrenewal/img/svg/sonyMainlogo.svg" alt="" class="d-block"></a></h1>
                
+                <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <!-- ul.gnb>li*5>a{대메뉴$} -->
-                <ul class="gnb ps-0 mb-0 mx-auto d-flex mt-0">
-                    <li class="px-5 position-relative d1">
-                        <a href="" class="gnb_d1_a pb-3 d-block">스토어추천제품</a>
-                        <ul class="position-absolute border p-4 bg-white mt-0">
-                            <li><a href="/cms/bbs/board.php?bo_table=store&sca=추천제품" class=" ">추천제품</a></li>
-                            <li><a href="/cms/bbs/board.php?bo_table=store&sca=선물제안" class=" ">선물제안</a></li>
-                            <li><a href="/cms/bbs/board.php?bo_table=store&sca=교육할인" class="">교육할인</a></li>
-                        </ul>
-                    </li>
-                    <li class="px-5 position-relative d1">
-                            <a href="" class="gnb_d1_a pb-3 d-block">제품</a>
+                <div class="collapse navbar-collapse order-lg-2" id="navbarSupportedContent">
+                    <ul class="gnb ps-0 mb-0 mx-auto d-lg-flex  mt-0">
+                        <li class="px-5 position-relative d1">
+                            <a href="#none" class="gnb_d1_a pb-3 d-block">스토어추천제품</a>
                             <ul class="position-absolute border p-4 bg-white mt-0">
-                                <li><a href="/cms/bbs/board.php?bo_table=gallery&sca=카메라" class="">카메라</a></li>
-                                <li><a href="/cms/bbs/board.php?bo_table=gallery&sca=비디오카메라" class="">비디오 카메라</a></li>
-                                <li><a href="/cms/bbs/board.php?bo_table=gallery&sca=오디오" class="">오디오</a></li>
-                                <li><a href="/cms/bbs/board.php?bo_table=gallery&sca=악세사리" class="">액세서리</a></li>
+                                <li><a href="/cms/bbs/board.php?bo_table=store&sca=추천제품" class=" ">추천제품</a></li>
+                                <li><a href="/cms/bbs/board.php?bo_table=store&sca=선물제안" class=" ">선물제안</a></li>
+                                <li><a href="/cms/bbs/board.php?bo_table=store&sca=교육할인" class="">교육할인</a></li>
                             </ul>
-                    </li>
-                    <li class="px-5 position-relative d1">
-                                <a href="" class="gnb_d1_a pb-3 d-block">기획전</a>
+                        </li>
+                        <li class="px-5 position-relative d1">
+                                <a href="#none" class="gnb_d1_a pb-3 d-block">제품</a>
                                 <ul class="position-absolute border p-4 bg-white mt-0">
-                                    <li><a href="/cms/bbs/board.php?bo_table=promotion&sca=%EC%86%8C%EB%8B%88%EC%8A%A4%ED%86%A0%EC%96%B4+%EB%8B%A8%EB%8F%85" class=" ">소니스토어 단독</a></li>
-                                    <li><a href="/cms/bbs/board.php?bo_table=promotion&sca=혜택존" class=" ">혜택존</a></li>
-                                    <li><a href="/cms/bbs/board.php?bo_table=promotion&sca=예약판매" class=" ">예약판매</a></li>
-                                    <li><a href="/cms/bbs/board.php?bo_table=promotion&sca=정품등록이벤트" class=" ">정품등록이벤트</a></li>
-                                    <li><a href="/cms/bbs/board.php?bo_table=promotion&sca=LIVE+ON" class=" ">LIVE ON</a></li>
+                                    <li><a href="/cms/bbs/board.php?bo_table=gallery&sca=카메라" class="">카메라</a></li>
+                                    <li><a href="/cms/bbs/board.php?bo_table=gallery&sca=비디오카메라" class="">비디오 카메라</a></li>
+                                    <li><a href="/cms/bbs/board.php?bo_table=gallery&sca=오디오" class="">오디오</a></li>
+                                    <li><a href="/cms/bbs/board.php?bo_table=gallery&sca=악세사리" class="">액세서리</a></li>
                                 </ul>
-                            </li>
-                     
-                                <li class="px-5 position-relative d1">
-                                    <a href="" class="gnb_d1_a pb-3 d-block">멤버십</a>
-                                    <ul class="position-absolute border p-0 bg-white mt-0">
-                                        <li><a href="" class="">등급&혜택안내</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="px-5 position-relative d1 ">
-                                    <a href="" class="gnb_d1_a pb-3 d-block">고객서비스</a>
+                        </li>
+                        <li class="px-5 position-relative d1">
+                                    <a href="#none" class="gnb_d1_a pb-3 d-block">기획전</a>
                                     <ul class="position-absolute border p-4 bg-white mt-0">
-                                        <li><a href="/cms/bbs/board.php?bo_table=free" class=" ">FAQ&공지사항</a></li>
-                                        <li><a href="/cms/bbs/board.php?bo_table=support" class=" ">정품등록 안내</a></li>
-                                        <li><a href="/cms/bbs/board.php?bo_table=product" class=" ">제품지원</a></li>
-                                        <li><a href="/cms/bbs/board.php?bo_table=qna" class=" ">구매 상담</a></li>
-                                        <li><a href="/cms/bbs/board.php?bo_table=information" class=" ">직영점 안내</a></li>
-                                        <li><a href="/cms/bbs/board.php?bo_table=movie" class=" ">동영상 강좌</a></li>
+                                        <li><a href="/cms/bbs/board.php?bo_table=promotion&sca=%EC%86%8C%EB%8B%88%EC%8A%A4%ED%86%A0%EC%96%B4+%EB%8B%A8%EB%8F%85" class=" ">소니스토어 단독</a></li>
+                                        <li><a href="/cms/bbs/board.php?bo_table=promotion&sca=혜택존" class=" ">혜택존</a></li>
+                                        <li><a href="/cms/bbs/board.php?bo_table=promotion&sca=예약판매" class=" ">예약판매</a></li>
+                                        <li><a href="/cms/bbs/board.php?bo_table=promotion&sca=정품등록이벤트" class=" ">정품등록이벤트</a></li>
+                                        <li><a href="/cms/bbs/board.php?bo_table=promotion&sca=LIVE+ON" class=" ">LIVE ON</a></li>
                                     </ul>
                                 </li>
+                        
+                                    <li class="px-5 position-relative d1">
+                                        <a href="#none" class="gnb_d1_a pb-3 d-block">멤버십</a>
+                                        <ul class="position-absolute border p-0 bg-white mt-0">
+                                            <li><a href="" class="">등급&혜택안내</a></li>
+                                        </ul>
+                                    </li>
 
-                </ul>
+                                    <li class="px-5 position-relative d1 ">
+                                        <a href="#none" class="gnb_d1_a pb-3 d-block">고객서비스</a>
+                                        <ul class="position-absolute border p-4 bg-white mt-0">
+                                            <li><a href="/cms/bbs/board.php?bo_table=free" class=" ">FAQ&공지사항</a></li>
+                                            <li><a href="/cms/bbs/board.php?bo_table=support" class=" ">정품등록 안내</a></li>
+                                            <li><a href="/cms/bbs/board.php?bo_table=product" class=" ">제품지원</a></li>
+                                            <li><a href="/cms/bbs/board.php?bo_table=qna" class=" ">구매 상담</a></li>
+                                            <li><a href="/cms/bbs/board.php?bo_table=information" class=" ">직영점 안내</a></li>
+                                            <li><a href="/cms/bbs/board.php?bo_table=movie" class=" ">동영상 강좌</a></li>
+                                        </ul>
+                                    </li>
 
+                    </ul>                   
+                </div>
 
-                <!-- ul.iconMenu>li*3>i -->
-                <ul class="iconMenu d-flex mt-0">
-                    <li class="searchicon"><i class="ms-3"><img src="/sonyrenewal/img/svg/search.svg" alt=""></i><span class="sr_only">검색</span></li>
-                    <li class="mypageicon position-relative">
-                        <a href="#none"><i class="ms-3"><img src="/sonyrenewal/img/svg/person.svg" alt=""></i><span class="sr_only">마이페이지</span></a>
-                        <div class='position-absolute top-100 start-0 bg-white '>
-                            <ul>
-                            <?php if ($is_member) {  ?>
-                                <li><a href="<?php echo G5_BBS_URL ?>/logout.php?url=/sonyrenewal">로그아웃<a></li>
-                                <li><a href="#none">정보수정</a></li>
-                            <?php } else {  ?>
-                                <li><a href="<?php echo G5_BBS_URL ?>/login.php?url=/sonyrenewal">로그인</a></li>
-                                <li><a href="<?php echo G5_BBS_URL ?>/register.php?url=/sonyrenewal">회원가입</a></li>
-                            <?php } ?>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="carticon"><i class="ms-3"><img src="/sonyrenewal/img/svg/shoppingbag.svg" alt=""></i><span class="sr_only">장바구니</span></li>
+                <ul class="iconMenu  mt-0 d-flex order-3">
+                        <li class="searchicon d-none d-lg-block"><i class="ms-3"><img src="/sonyrenewal/img/svg/search.svg" alt=""></i><span class="sr_only">검색</span></li>
+                        <li class="mypageicon position-relative">
+                            <a href="#none"><i class="ms-3"><img src="/sonyrenewal/img/svg/person.svg" alt=""></i><span class="sr_only">마이페이지</span></a>
+                            <div class='position-absolute top-100 start-0 bg-white '>
+                                <ul>
+                                <?php if ($is_member) {  ?>
+                                    <li><a href="<?php echo G5_BBS_URL ?>/logout.php?url=/sonyrenewal">로그아웃<a></li>
+                                    <li><a href="#none">정보수정</a></li>
+                                <?php } else {  ?>
+                                    <li><a href="<?php echo G5_BBS_URL ?>/login.php?url=/sonyrenewal">로그인</a></li>
+                                    <li><a href="<?php echo G5_BBS_URL ?>/register.php?url=/sonyrenewal">회원가입</a></li>
+                                <?php } ?>
+                                </ul>
+                            </div>
+                        </li>
+                    <li class="carticon  d-none d-lg-block"><i class="ms-3"><img src="/sonyrenewal/img/svg/shoppingbag.svg" alt=""></i><span class="sr_only">장바구니</span></li>
                 </ul>
             </div>
         </header>
@@ -135,7 +141,24 @@
                 innerDivElement.classList.toggle('d-block');
           }
 
-document.querySelector('.mypageicon a').addEventListener('click', toggleShowClass);
+          document.querySelector('.mypageicon a').addEventListener('click', toggleShowClass);
 
-            </script>
+          const gnblias = document.querySelectorAll('.gnb_d1_a');
+
+          
+
+          gnblias.forEach((element, idx) => {
+            
+            // Example: Adding a click event listener
+            element.addEventListener('click', function(){
+               //for문으로 처리
+             
+            gnblias.forEach(el => el.classList.remove('on'));
+            this.classList.add('on');
+            console.log(this);
+
+            });
+        });
+
+        </script>
         <div class="<?php echo $bo_table ? 'inner mx-auto minheight' : ''; ?>">

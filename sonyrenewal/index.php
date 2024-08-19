@@ -3,9 +3,12 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 
 ?>
 
+<div class="wrap mx-3 mx-xl-0">
+
+
 <?php include_once("./top.php"); ?>
         <section id="banner">
-            <div class="inner mx-auto  d-flex justify-content-between">
+            <div class="inner mx-auto  d-xl-flex justify-content-between">
                 <?php include_once("./main/mainSwiper.php"); ?>
 
                 <?php echo latest('rightBanner','mainRightbanner',2, 100); ?>
@@ -381,5 +384,5 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
         </section>
  
  <?php include_once("./bottom.php"); ?>       
-
+ </div>
 

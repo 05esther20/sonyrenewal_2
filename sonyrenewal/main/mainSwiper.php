@@ -1,5 +1,5 @@
 
-                <div class="swiper me-3">
+                <div class="swiper me-xl-3">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="swiperinner br20 col  d-flex flex-column justify-content-start align-items-start ps-5 pt-5">

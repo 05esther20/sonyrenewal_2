@@ -28,7 +28,7 @@
                     @media (max-width:1024px){
                         #allMenu{ display: block ; order:1}  
                         #hd h1{order:2}
-                        .gnb{ display: none !important;}
+                        // .gnb{ display: none !important;}
                         .iconMenu > li:not(.mypageicon){
                             display: none;
                         } 
@@ -53,13 +53,18 @@
         ul{  
         margin-top: 1rem;
         &.gnb{
-            &:hover{
-                //대메뉴에 롤오버시 소메뉴 노출
-                ul{
-                    height: 200px !important;
-                    transition: 0.5s;
+
+            @media (min-width:991px) {
+                &:hover{
+                    //대메뉴에 롤오버시 소메뉴 노출
+                    ul{
+                        height: 200px !important;
+                        transition: 0.5s;
+                    }
                 }
+                
             }
+           
             a{
                 font-size: 1rem;
                 font-weight: bold;

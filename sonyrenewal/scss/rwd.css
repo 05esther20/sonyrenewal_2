@@ -1,0 +1,19 @@
+@media (max-width: 990px) {
+  #navbarSupportedContent {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70px;
+    background-color: white;
+    padding: 45px;
+  }
+  #navbarSupportedContent .gnb .position-absolute {
+    position: unset !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .rightthumbimg {
+    max-width: 100%;
+  }
+}
