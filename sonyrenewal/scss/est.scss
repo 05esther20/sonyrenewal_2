@@ -142,22 +142,36 @@
     .swiper{
         border-radius: 20px;
         overflow: hidden;
+        @media (max-width:1028px) {
+            border-radius: 0;            
+        }
         .br20{
           background: url(/sonyrenewal/img/mainCamera.jpg) no-repeat center #000;
           background-size: 100%;
-          height: 100%;
+          @media (max-width:1028px) {
+            border-radius: 0 !important;            
+        }
+          
         }
         .br21{
-            background: url(/sonyrenewal/img/mainCamera2.jpg) no-repeat center #A982C1;
+          background: url(/sonyrenewal/img/mainCamera2.jpg) no-repeat center #A982C1;
           background-size: 100%;
           height: 100%;
           border-radius: 20px;
+          @media (max-width:1028px) {
+            border-radius: 0;
+            
+        }
         }
         .br22{
-            background: url(/sonyrenewal/img/mainCamera3.jpg)  no-repeat center #000;
+          background: url(/sonyrenewal/img/mainCamera3.jpg)  no-repeat center #000;
           background-size: 100%;
           height: 100%;
           border-radius: 20px;
+          @media (max-width:1028px) {
+            border-radius: 0;
+            
+        }
         }
 
         .swiper-button-prev{
@@ -199,7 +213,7 @@
         }
 
         &.gradient-box{
-            width: 354px;
+            width: 346px;
             height: 454px;
             background: linear-gradient(#D8D8D8, #DADADA, #F2F2F2); /* 회색 그라디언트 */
             border-radius: 20px; /* 모서리를 둥글게 */
@@ -365,12 +379,26 @@
             margin: auto;
             cursor: pointer;
 
+            @media (max-width:1024px) {
+                background: 
+                url(http://esthersony.dothome.co.kr/sonyrenewal/img/ps5Video.png)
+                no-repeat center 100%;
+                background-size: auto 100%;
+                ;
+            }
+
                   
             img{
                 align-items: center;
                 border-radius: 20px;
               
                 height: 550px;
+                @media (max-width:1024px) {
+                    &.thumbnail{
+                    opacity: 0;
+                    }
+                    
+                }
             }
             .playButton{
                 width: 84px;

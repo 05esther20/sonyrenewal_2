@@ -8,20 +8,6 @@
   height: auto;
 }
 
-.title_big {
-  font-size: 2rem;
-}
-
-.mainsubtitle {
-  font-size: 1.2rem;
-}
-
-.mainbigtxt {
-  font-size: 6rem;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
 header #allMenu {
   display: none;
 }
@@ -32,6 +18,9 @@ header #allMenu {
   }
   header #hd h1 {
     order: 2;
+  }
+  header .gnb {
+    display: none !important;
   }
   header .iconMenu > li:not(.mypageicon) {
     display: none;
@@ -53,11 +42,9 @@ header #allMenu {
 header ul {
   margin-top: 1rem;
 }
-@media (min-width: 991px) {
-  header ul.gnb:hover ul {
-    height: 200px !important;
-    transition: 0.5s;
-  }
+header ul.gnb:hover ul {
+  height: 200px !important;
+  transition: 0.5s;
 }
 header ul.gnb a {
   font-size: 1rem;
@@ -102,40 +89,6 @@ header ul.iconMenu li i {
   margin-left: 1rem;
 }
 
-#banner .swiper {
-  border-radius: 20px;
-  overflow: hidden;
-}
-#banner .swiper .br20 {
-  background: url(/sonyrenewal/img/mainCamera.jpg) no-repeat center #000;
-  background-size: 100%;
-  height: 100%;
-}
-#banner .swiper .br21 {
-  background: url(/sonyrenewal/img/mainCamera2.jpg) no-repeat center #A982C1;
-  background-size: 100%;
-  height: 100%;
-  border-radius: 20px;
-}
-#banner .swiper .br22 {
-  background: url(/sonyrenewal/img/mainCamera3.jpg) no-repeat center #000;
-  background-size: 100%;
-  height: 100%;
-  border-radius: 20px;
-}
-#banner .swiper .swiper-button-prev {
-  color: white;
-}
-#banner .swiper .swiper-button-next {
-  color: white;
-}
-#banner .rightBananer .submtitle {
-  font-size: 1.5rem !important;
-}
-
-#product {
-  margin-bottom: 30px;
-}
 #product li img {
   max-width: 450px;
   display: block;
@@ -180,83 +133,14 @@ header ul.iconMenu li i {
   margin-top: 28%;
 }
 
-.fa + .sound_only {
-  position: unset !important;
-  font-size: 16px !important;
-  overflow: visible !important;
-  width: auto !important;
-  height: auto !important;
-  line-height: 1 !important;
-}
-
-.btn_bo_user li {
-  width: auto !important;
-}
-
-.rightBannerlist0 {
-  margin-bottom: 1rem;
-}
-
-.mypageicon > div {
-  display: none;
-}
-
-#video .swiper-button-prev,
-#video .swiper-button-next {
-  border: 4px solid white !important;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-}
-#video .swiper-button-prev:after,
-#video .swiper-button-next:after {
-  color: #fff !important;
-  font-size: 18px;
-  font-weight: bolder;
-}
-#video .swiper-button-prev {
-  transform: translate(-33px, -19px);
-}
-#video .swiper-button-next {
-  transform: translate(33px, -19px);
-}
-#video .swiper {
-  overflow: visible !important;
-}
-#video .swiper .swiper-slide {
-  max-width: 335px;
-  width: 60vw;
-}
-#video .swiper .swiper-slide img {
-  width: 100%;
-  height: 190px;
-  display: block;
-  border-radius: 20px;
-}
 #video .ps5bg {
-  margin: 0px auto;
-  padding: 70px 30px;
-  background: linear-gradient(-45deg, #4E4462, #4B5388, #A982C1, #91DAE3, #3E6D96);
-  background-size: 400% 400%;
-  animation: gradient 6s ease infinite;
-}
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  background: url("../img/ps5Bg.jpg") no-repeat center;
+  background-size: 100%;
+  height: 860px;
 }
 #video .section_title img {
   max-width: 250px;
   width: 25vw;
-}
-#video .section_title .ps5title {
-  font-size: 1.2rem;
 }
 #video .thumbnail {
   width: 100%;
@@ -296,55 +180,22 @@ header ul.iconMenu li i {
   height: 100%;
 }
 
-.controllerimg {
-  height: 20rem;
-}
-
-.consoletitle {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.consoleex {
-  font-size: 1rem !important;
-}
-
-.cosoleblank {
-  margin-bottom: 255px;
-}
-
 .readMorebox {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
   color: #fff;
   background: #000;
-  border-radius: 20px;
-  width: 131px;
-  height: 38px;
+  border-radius: 30px;
+  width: 155px;
+  height: 41px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.event {
-  margin-bottom: 320px;
-}
-@media (max-width: 1024px) {
-  .event {
-    margin-bottom: 15vw;
-  }
-}
-
-.eventbkank {
-  margin-bottom: 320px;
-}
-
-.eventtitle {
-  font-size: 2rem;
-}
-
-.eventmaintxt {
-  font-size: 1.2rem;
+#banner .swiper.br20 {
+  background: url(../img/mainCamera.jpg) no-repeat center #000;
+  background-size: 100%;
 }
 
 .beforebar:before {
@@ -366,44 +217,8 @@ header ul.iconMenu li i {
   background-color: #fff;
 }
 
-.academy {
-  margin-bottom: 300px;
-}
-.academy .academymaintitle {
-  font-size: 2rem;
-}
-.academy .phototitle {
-  font-size: 1.2rem;
-}
-
-#fnq {
-  margin-bottom: 110px;
-}
 #fnq .fnqtxt {
   white-space: nowrap;
-  font-size: 1rem;
-}
-#fnq .fnqtitle {
-  font-size: 2.5rem;
-}
-#fnq .noticeicon {
-  width: auto;
-  height: 60px;
-}
-#fnq .shopicon {
-  width: auto;
-  height: 60px;
-}
-#fnq .coustomericon {
-  width: auto;
-  height: 60px;
-}
-#fnq .supporticon {
-  width: auto;
-  height: 60px;
-}
-#fnq .fnqblank {
-  margin-right: 10rem;
 }
 
 #footer {
@@ -413,64 +228,4 @@ header ul.iconMenu li i {
 #footer .sonyfooterlogo {
   width: 107px;
   height: 20px;
-}
-#footer .footerex {
-  font-size: 0.9rem;
-}
-
-#mb_login {
-  max-width: 385px;
-  margin: 0 auto;
-  min-height: calc(100vh - 397px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#mb_login .logintxt {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-#mb_login .logintitle {
-  font-size: 2rem;
-  font-weight: bold;
-}
-#mb_login .frm_input {
-  border-radius: 5px;
-  border-color: #ccc;
-  border-width: 1px;
-  line-height: 40px;
-  width: 300px;
-}
-#mb_login .loginbutton {
-  height: 50px;
-  border-radius: 10px;
-  border: 0;
-}
-#mb_login .sound_only {
-  font-size: 0;
-  line-height: 0;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
-
-#loginbox:before {
-  content: "";
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  transform: rotate(-45deg);
-  border-width: 1px 1px 0 0;
-  border-style: solid;
-  border-color: #000;
-  position: relative;
-  left: 20px;
-  top: 8px;
-  background: white;
-}
-#loginbox ul {
-  min-width: 110px;
-  padding: 15px;
-  margin-left: -30px;
-  border: 1px solid #000;
 }

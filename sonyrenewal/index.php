@@ -8,63 +8,35 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 
 <?php include_once("./top.php"); ?>
         <section id="banner">
-            <div class="inner mx-auto  d-xl-flex justify-content-between">
+            <div class="inner mx-auto  d-xxl-flex justify-content-between">
                 <?php include_once("./main/mainSwiper.php"); ?>
 
                 <?php echo latest('rightBanner','mainRightbanner',2, 100); ?>
-<!--                 
-                <div class="rightBananer d-flex flex-column justify-content-between ">
-                            <div class="position-relative mb-3">
-                                <div class="position-absolute ps-5 pt-5">
-                                        <p class="text-white submtitle"><strong>세계 최경량</strong> 300mm F2.8렌즈 <br>
-                                            <strong>SEL300F28GM</strong></p>
-                                    <div class="readMorebox mb-5 bg-white">
-                                        <p class="mb-1">
-                                            <a href="#" class="text-dark">자세히보기</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <img src="/sonyrenewal/img/submain1.png" >
-                            </div>
-        
-                            <div class="position-relative">
-                                <div class="position-absolute ps-5 pt-5">
-                                        <p class="text-white submtitle">몰입의 <strong>즐거움</strong> <br>
-                                            <strong>WH-1000XM5</strong></p>
-                                    <div class="readMorebox mb-5 bg-white">
-                                        <p class="mb-1">
-                                            <a href="#" class="text-dark">자세히보기</a>
-                                        </p>
-                                    </div>
 
-                                </div>
-                                <img src="/sonyrenewal/img/submain2.png" >
-                            </div>
-                </div> -->
             </div>
         </section>
 
 
         <!-- 제품메뉴 -->
 
-        <section class="inner mx-auto" id="product">
-            <ul class="d-flex justify-content-between py-4">
+        <section class="inner mx-auto swiper" id="product">
+            <ul class=" py-4 swiper-wrapper">
                 
                 
-                    <li class="overflow-hidden col video_camera gradient-box mx-2">
+                    <li class="overflow-hidden  video_camera gradient-box  swiper-slide">
                         <a href="#" class="d-block">
                             <strong class="d-block mx-4 mt-5 product_title">VIDEO CAMERA</strong>
-                            <span class="d-block mx-4 product_ex">디지털 영상 촬영의 새로운 지평을 연 소니</span>
+                            <span class="mx-4 product_ex d-none d-md-block">디지털 영상 촬영의 새로운 지평을 연 소니</span>
                             <img src="./img/videoCamera.png" class="d-flex " >
                         </a>
                     </li>
               
                     
                 
-                    <li class="col gradient-box mx-2 product_camera">
+                    <li class=" gradient-box  product_camera swiper-slide">
                         <a href="#">
                             <strong class="d-block mx-4 mt-5 product_title">CAMERA</strong>
-                            <span class="d-block mx-4 product_ex">눈으로 볼 수 없던 세계로 가는 문</span>
+                            <span class="d-none d-md-block mx-4 product_ex">눈으로 볼 수 없던 세계로 가는 문</span>
                             <img src="./img/menuCamera.png">
                         </a>
                     </li>
@@ -72,10 +44,10 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 
 
               
-                    <li  class="col gradient-box mx-2 product_audio">
+                    <li  class=" gradient-box  product_audio swiper-slide">
                         <a href="#">
                             <strong class="d-block mx-4 mt-5 product_title">AUIDO</strong>
-                            <span class="d-block mx-4 product_ex">놀랍도록 사실적이고 몰입적인 사운드</span>
+                            <span class="d-none d-md-block mx-4 product_ex">놀랍도록 사실적이고 몰입적인 사운드</span>
                             <img src="./img/audio.png">
                         </a>
                     </li>
@@ -83,31 +55,66 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 
 
              
-                    <li  class="col  gradient-box  mx-2 product_ps5">
+                    <li  class="  gradient-box  product_ps5 swiper-slide">
                         <a href="#">
                             <strong class="d-block mx-4 mt-5 product_title">PlayStation®</strong>
-                            <span class="d-block mx-4 product_ex">경계 너머의 새로운 세상을 탐험하다</span>
+                            <span class="d-none d-md-block  mx-4 product_ex">경계 너머의 새로운 세상을 탐험하다</span>
                             <img src="./img/menuPs5.png">
                         </a>
                     </li>
                
-                    <li  class="col  gradient-box  mx-2 product_acc">
+                    <li  class="  gradient-box  product_acc swiper-slide">
                         <a href="#">
                             <strong class="d-block mx-4 mt-5 product_title">ACCESSORY</strong>
-                            <span class="d-block mx-4 product_ex">배터리, 자가수리키트, 가방 등</span>
+                            <span class="d-none d-md-block  mx-4 product_ex">배터리, 자가수리키트, 가방 등</span>
                             <img src="./img/accessory.png" >
                         </a>
                     </li>
                
             </ul>
+                          
+<script>       
+ const mainswiper_product = new Swiper('#product.swiper', {
+  spaceBetween: 20,
+  slidesPerView: 'auto',
+  loop: true, 
+  autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+//   },
+//   breakpoints: {
+//         640: {
+//           slidesPerView: 3.5,
+//           spaceBetween: 20,
+//         },
+//         1024: {
+//           slidesPerView: 4.1,
+//           spaceBetween: 20,
+//         },
+//         1280: {
+//           slidesPerView: 4.8,
+//           spaceBetween: 20,
+//         },
+//         1440: {
+//           slidesPerView: 5,
+//           spaceBetween: 20,
+//         },
+   },
+
+
+
+
+ 
+});
+</script>
         </section>
 
 
         <!-- ps5 홍보비디오 -->
 
         <section id="video" class="overflow-hidden">
-            <div class="ps5bg">
-                <div class="text-center container">
+            <div class="ps5bg px-0">
+                <div class="text-center container-xl px-0 px-xl-3">
                             
                         <div class="section_title pt-5 pb-2 ">
                            <a href="https://www.playstation.com/ko-kr/ps5/games/?smcid=pdc%3Ako-kr%3Aaccessories%3Aprimary%20nav%3Amsg-games%3Aps5"> 
@@ -126,7 +133,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
                                         
                                     <img src="./img/ps5Video.png" alt="Video Thumbnail" class="thumbnail">
                                         <div class="iframe-container" id="iframeContainer">
-                                            <iframe id="youtubeIframe" width="1296" height="550" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                            <iframe id="youtubeIframe" width="100%" height="100%" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                         </div>
                         </div>
                 </div>
@@ -356,7 +363,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 
         <!-- 문의사항 -->   
         <section id="fnq"> 
-            <div class="inner d-flex justify-content-between justify-content-center mx-auto lign-items-center ">
+            <div class="inner d-lg-flex justify-content-between justify-content-center mx-auto lign-items-center ">
                 <div class="text-start d-flex ps-1">
                     <span class="beforebar mt-3"></span>
                     <strong class="d-block mb-4 mb-0 fnqtitle">무엇을 <br> 도와드릴까요? </strong>
