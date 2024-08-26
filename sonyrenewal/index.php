@@ -3,7 +3,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 
 ?>
 
-<div class="wrap mx-3 mx-xl-0">
+
 
 
 <?php include_once("./top.php"); ?>

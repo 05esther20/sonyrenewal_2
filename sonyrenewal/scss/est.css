@@ -329,6 +329,11 @@ header ul.iconMenu li i {
 .event {
   margin-bottom: 320px;
 }
+@media (max-width: 1024px) {
+  .event {
+    margin-bottom: 15vw;
+  }
+}
 
 .eventbkank {
   margin-bottom: 320px;
@@ -447,4 +452,25 @@ header ul.iconMenu li i {
   width: 0;
   height: 0;
   overflow: hidden;
+}
+
+#loginbox:before {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(-45deg);
+  border-width: 1px 1px 0 0;
+  border-style: solid;
+  border-color: #000;
+  position: relative;
+  left: 20px;
+  top: 8px;
+  background: white;
+}
+#loginbox ul {
+  min-width: 110px;
+  padding: 15px;
+  margin-left: -30px;
+  border: 1px solid #000;
 }

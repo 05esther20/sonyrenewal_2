@@ -5,16 +5,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="apple-touch-icon" href="http://esthersony.dothome.co.kr/sonyrenewal/img/favicon.ico">
+    <link rel="shortcut icon" href="http://esthersony.dothome.co.kr/sonyrenewal/img/favicon.ico">
+    <title>고객은 가능성을 보고 소니는 솔루션을 상상합니다 - SONY</title>
+
     <!-- seo -->
     <meta name="description" content="" /> 
     <meta property="og:locale" content="ko_KR" /> 
     <meta property="og:site_name" content="" /> 
     <meta property="og:url" content=""/> 
     <meta property="og:type" content="website" /> 
-    <meta property="og:title" content="" /> 
+    <meta property="og:titlte" content="" /> 
     <meta property="og:description" content="" /> 
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="http://esthersony.dothome.co.kr/sonyrenewal/img/sonySeo.jpg">
 
     <!-- 파비콘 바로가기 -->
     <link rel="shortcut icon" type="image/x-icon" href="" />
@@ -62,7 +65,7 @@
                 </button>
                 <!-- ul.gnb>li*5>a{대메뉴$} -->
                 <div class="collapse navbar-collapse order-lg-2" id="navbarSupportedContent">
-                    <ul class="gnb ps-0 mb-0 mx-auto d-lg-flex  mt-0">
+                    <ul class="gnb ps-0 mb-0 mx-auto d-lg-flex  mt-2">
                         <li class="px-5 position-relative d1">
                             <a href="#none" class="gnb_d1_a pb-3 d-block">스토어추천제품</a>
                             <ul class="position-absolute border p-4 bg-white mt-0">
@@ -117,9 +120,11 @@
                         <li class="searchicon d-none d-lg-block"><i class="ms-3"><img src="/sonyrenewal/img/svg/search.svg" alt=""></i><span class="sr_only">검색</span></li>
                         <li class="mypageicon position-relative">
                             <a href="#none"><i class="ms-3"><img src="/sonyrenewal/img/svg/person.svg" alt=""></i><span class="sr_only">마이페이지</span></a>
-                            <div class='position-absolute top-100 start-0 bg-white '>
-                                <ul>
+                            <div class='position-absolute top-100 start-0' id="loginbox">
+
+                                <ul class='mt-0 bg-white'>
                                 <?php if ($is_member) {  ?>
+                                    <li>환영합니다.</li>
                                     <li><a href="<?php echo G5_BBS_URL ?>/logout.php?url=/sonyrenewal">로그아웃<a></li>
                                     <li><a href="#none">정보수정</a></li>
                                 <?php } else {  ?>
