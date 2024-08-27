@@ -299,12 +299,12 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 
         <!-- 소니아카데미 -->
 
-        <div class="academy container ">
+        <div class="academy container">
 
             <strong class="d-block mb-4 beforebar"><span class="academymaintitle">SONY Academy</span></strong>
             <ul class="row">
                
-                 <li class="text-center col-4">
+                 <li class="text-center col-lg-4 mb-2 mb-lg-0">
                     <ul class="">
                         <li class="position-relative mb-2">
                             <a href="#"><img src="./img/sonyAcademy1.jpg" alt="" class="img-fluid rounded-4  academy_pic1">
@@ -334,9 +334,10 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
                 </li>
 
 
-                <li class="text-center col-4 position-relative">
+                <li class="text-center col-lg-4 position-relative mb-2 mb-lg-0">
                         <a href="#">
-                            <img src="./img/sonyAcademy3.jpg" alt=""  class="img-fluid rounded-4 academy_pic2">
+                            <img src="./img/sonyAcademy3.jpg" alt=""  class="img-fluid rounded-4 academy_pic2 d-none d-lg-block">
+                            <img src="./img/sonyAcademy3m.jpg" alt=""  class="img-fluid rounded-4 academy_hidden d-lg-none">
                                 <div class="position-absolute start-0 top-0 w-100 h-100 text-white d-flex flex-column justify-content-center align-items-center">
                                     <div class="text-start">
                                         <p class="d-block mb-0">사진실습:[사진실습중급]</p>
@@ -346,8 +347,9 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
                         </a>        
                 </li>
 
-                <li class="text-center col-4 position-relative">
-                        <a href="#"><img src="./img/sonyAcademy4.jpg" alt="" class="img-fluid rounded-4 academy_pic2">
+                <li class="text-center col-lg-4 position-relative">
+                        <a href="#"><img src="./img/sonyAcademy4.jpg" alt="" class="img-fluid rounded-4 academy_pic2 d-none d-lg-block">
+                        <img src="./img/sonyAcademy4m.jpg" alt=""  class="img-fluid rounded-4 academy_hidden d-lg-none">
                             <div class="position-absolute start-0 top-0 w-100 h-100 text-white d-flex flex-column justify-content-center align-items-center">
                                 <div class="text-start">
                                     <p class="d-block mb-0">사진실습:[사진실습고급]</p>
@@ -369,7 +371,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
                     <strong class="d-block mb-4 mb-0 fnqtitle">무엇을 <br> 도와드릴까요? </strong>
                 </div>
                 
-                <ul class="d-flex mt-5">
+                <ul class="d-flex mt-5 ">
                         <li class="fnqblank start-0 top-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                            <a href="#"><img src="./img/svg/Faq.svg" alt="공지사항 아이콘" class="noticeicon"></a>
                             <p class="fnqtxt"><strong>FAQ&공지사항</strong></p>
@@ -386,7 +388,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
                             <a href="#"><img src="./img/svg/settings.svg" alt="제품지원 아이콘" class="supporticon"></a>
                             <p class="fnqtxt"><strong>제품지원</strong></p>
                         </li>
-                    </ul>
+                </ul>
             </div>
         </section>
  

@@ -1,7 +1,7 @@
 </div>
     <!-- 푸터 -->
     <footer id="footer">
-            <div class="footerex d-flex justify-content-between align-items-center mx-auto inner ps-2 pt-5 pb-5">
+            <div class="footerex d-xl-flex justify-content-between align-items-center mx-auto inner ps-2 pt-5 pb-5">
                 <div>            
                     
                     <div class="mb-4">
@@ -35,7 +35,7 @@
 
                 </div>
 
-                <div>
+                <div class="snsicon">
                     <p>FOLLOW US</p>
                     <div class="d-flex">
                         <a href="#">

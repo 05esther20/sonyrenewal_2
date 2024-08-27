@@ -124,12 +124,12 @@
 
                                 <ul class='mt-0 bg-white'>
                                 <?php if ($is_member) {  ?>
-                                    <li>환영합니다.</li>
-                                    <li><a href="<?php echo G5_BBS_URL ?>/logout.php?url=/sonyrenewal">로그아웃<a></li>
-                                    <li><a href="#none">정보수정</a></li>
-                                <?php } else {  ?>
-                                    <li><a href="<?php echo G5_BBS_URL ?>/login.php?url=/sonyrenewal">로그인</a></li>
-                                    <li><a href="<?php echo G5_BBS_URL ?>/register.php?url=/sonyrenewal">회원가입</a></li>
+                                    <li><span class="Personal_line">환영합니다.</span></li>
+                                        <li class="personal_mt"><a href="<?php echo G5_BBS_URL ?>/logout.php?url=/sonyrenewal " class="Personal_info">로그아웃<a></li>
+                                        <li><a href="#none" class="Personal_info">정보수정</a></li>
+                                    <?php } else {  ?>
+                                    <li><a href="<?php echo G5_BBS_URL ?>/login.php?url=/sonyrenewal"  class="Personal_info">로그인</a></li>
+                                    <li><a href="<?php echo G5_BBS_URL ?>/register.php?url=/sonyrenewal" class="Personal_info">회원가입</a></li>
                                 <?php } ?>
                                 </ul>
                             </div>
