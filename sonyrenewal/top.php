@@ -1,4 +1,10 @@
 
+<?php 
+include_once('./_common.php');
+include_once(G5_LIB_PATH.'/latest.lib.php');
+// 팝업, 상단연동, 메인 최근게시연동
+
+?>
 
 <!DOCTYPE html>
 <html lang="kr">
@@ -54,6 +60,11 @@
     <link rel="stylesheet" href="/sonyrenewal/css/rwd.min.css">
 </head>
 <body>
+   <?php
+    if(defined('_INDEX_')) { // index에서만 실행
+        include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
+    }
+    ?>
 
     <!-- 헤더 -->
         <header id="hd" class="position-relative zup bg-white  "> 
@@ -65,7 +76,48 @@
                 </button>
                 <!-- ul.gnb>li*5>a{대메뉴$} -->
                 <div class="collapse navbar-collapse order-lg-2" id="navbarSupportedContent">
-                    <ul class="gnb ps-0 mb-0 mx-auto d-lg-flex  mt-2">
+
+                <ul class="gnb ps-0 mb-0 mx-auto d-lg-flex  mt-2">   
+
+               
+                               
+                <?php
+				$menu_datas = get_menu_db(0, true);
+				$gnb_zindex = 999; // gnb_1dli z-index 값 설정용
+                $i = 0;
+                foreach( $menu_datas as $row ){
+                    if( empty($row) ) continue;
+                    $add_class = (isset($row['sub']) && $row['sub']) ? 'gnb_al_li_plus' : '';
+                ?>
+                <li class="px-5 position-relative d1">
+                    <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="gnb_d1_a pb-3 d-block"><?php echo $row['me_name'] ?></a>
+                    <?php
+                    $k = 0;
+                    foreach( (array) $row['sub'] as $row2 ){
+
+                        if( empty($row2) ) continue; 
+
+                        if($k == 0)
+                            echo '<ul class="position-absolute border p-4 bg-white mt-0">'.PHP_EOL;
+                    ?>
+                        <li ><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>" ><?php echo $row2['me_name'] ?></a></li>
+                    <?php
+                    $k++;
+                    }   //end foreach $row2
+
+                    if($k > 0)
+                        echo '</ul>'.PHP_EOL;
+                    ?>
+                </li>
+                <?php
+                $i++;
+                }   //end foreach $row
+
+                if ($i == 0) {  ?>
+                    <li class="gnb_empty">메뉴 준비 중입니다.<?php if ($is_admin) { ?> <a href="<?php echo G5_ADMIN_URL; ?>/menu_list.php">관리자모드 &gt; 환경설정 &gt; 메뉴설정</a>에서 설정하실 수 있습니다.<?php } ?></li>
+                <?php } ?>
+            </ul>
+                    <!-- <ul class="gnb ps-0 mb-0 mx-auto d-lg-flex  mt-2">
                         <li class="px-5 position-relative d1">
                             <a href="#none" class="gnb_d1_a pb-3 d-block">스토어추천제품</a>
                             <ul class="position-absolute border p-4 bg-white mt-0">
@@ -113,7 +165,7 @@
                                         </ul>
                                     </li>
 
-                    </ul>                   
+                    </ul>                    -->
                 </div>
 
                 <ul class="iconMenu  mt-0 d-flex order-3">
