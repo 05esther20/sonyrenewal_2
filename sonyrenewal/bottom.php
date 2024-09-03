@@ -25,11 +25,12 @@
                         <ul class=" d-flex mb-5">
                             <li><a href="#" class="text-white afterbar pe-2 me-2">이용약관</a></li>
                             <li><a href="#" class="text-white  pe-2  me-2 afterbar">개인정보처리방침</a></li>
-                            <li><a href="#" class="text-white  pe-2  me-2 afterbar">소비자 피해 보상보험</a></li>
+                            <li><a href="#" class="text-white  pe-2  me-2 afterbar"><span class='d-none d-md-inline'>소비자 </span>피해 보상보험</a></li>
                             <li><a href="#" class="text-white">사이트맵</a></li>
                         </ul>
-                        <p> 사업장주소 : 서울특별시 영등포구 국제금융로 10 원 아이에프씨 24F 사업자 등록번호 : 106-81-23810 통신판매번호 2012-서울영등포-1038 소니코리아㈜ <br>
-                            대표이사 : Okura Kikuo개인정보관리책임자 : Okura KikuoTEL : 소니코리아 고객센터 1588-0911E-MAIL : cshelp@sony.co.kr <br> 
+                        <p> 
+                        사업장주소 : 서울특별시 영등포구 국제금융로 10 원 아이에프씨 24F <span class='d-none d-md-inline'>사업자 등록번호 : 106-81-23810 통신판매번호 2012-서울영등포-1038 소니코리아㈜ <br>
+                            대표이사 : Okura Kikuo개인정보관리책임자 : Okura KikuoTEL : 소니코리아 고객센터 1588-0911E-MAIL : cshelp@sony.co.kr</span> <br> 
                             Copyright © Sony Korea Corporation. All rights reserved.
                         </p>
 
@@ -75,15 +76,7 @@
             </div>
     </footer>
 
-        <script>
-            // 유튜브 영상 관리 
-            function playVideo() {
-                var iframeContainer = document.getElementById('iframeContainer');
-                var youtubeIframe = document.getElementById('youtubeIframe');
-                youtubeIframe.src = '//www.youtube.com/embed/VV6dJjdWvjk?autoplay=1&mute=1';
-                iframeContainer.style.display = 'block';
-            }
-        </script>
+      
 
     </body>
 </html>

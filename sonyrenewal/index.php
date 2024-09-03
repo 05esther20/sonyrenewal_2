@@ -6,9 +6,7 @@
         <section id="banner">
             <div class="inner mx-auto  d-xxl-flex justify-content-between">
                 <?php include_once("./main/mainSwiper.php"); ?>
-
                 <?php echo latest('rightBanner','mainRightbanner',2, 100); ?>
-
             </div>
         </section>
 
@@ -71,36 +69,14 @@
         <!-- 이벤트 -->
         
   
-            <div class="event inner mx-auto">
+            <div class="event inner mx-auto swiper">
                 <strong class="d-block mb-4 beforebar ps-1"><span class="eventtitle">Event</span></strong>
-                <ul class="row mx-0">
                 
-                    <li class="text-center col-3">
-                        <a href="#"><img src="./img/event1.jpg" alt="" class="img-fluid rounded-4 mb-2"></a>
-                        <a href="#"><strong class="d-block eventmaintxt">풀프레임 NO.1</strong></a>
-                        <a href="#"><p>1위 고객감사 이벤트. 제품 구매 후 정품 등록하면 특별한 선물 증정!</p></a>
-                    </li>
-
-                    <li class="text-center col-3">
-                        <a href="#"><img src="./img/event2.jpg" alt=""  class="img-fluid rounded-4 mb-2"></a>
-                        <a href="#"><strong class="d-block eventmaintxt">일상을 담아 봄</strong></a>
-                        <a href="#"><p>ZV 구매 후 정품등록 및 사은품 신청 시 특별한 선물을 드립니다.</p></a>
-                    </li>
-
-                    <li class="text-center col-3">
-                        <a href="#"><img src="./img/event3.jpg" alt="" class="img-fluid rounded-4 mb-2"></a>
-                        <a href="#"><strong class="d-block eventmaintxt">봄에는 더 가볍게</strong></a>
-                        <a href="#"><p>소니APS-C 카메라로, 다시 오지 않을 이 봄을 담아 보세요!</p></a>
-                    </li>
-                    
-                    <li class="text-center col-3">
-                        <a href="#"><img src="./img/event4.jpg" alt="" class="img-fluid rounded-4 mb-2"></a>
-                        <a href="#"><strong class="d-block eventmaintxt">소니 피크닉을 부탁해!</strong></a>
-                        <a href="#"><p>소니가 준비한 피크닉 필수품과 봄소풍을 떠나자!</p></a>
-                    </li>
-                
-                </ul>
+                <?php echo latest('mainpro3', 'event', 4, 100); ?>
             </div> 
+            <script>
+
+                </script>
 
 
         <!-- 소니아카데미 -->
