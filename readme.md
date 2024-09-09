@@ -1,5 +1,6 @@
 # 박에스더 SONY 리뉴얼 프로젝트
- 🔗 http://esthersony.dothome.co.kr/sonyrenewal/  (홈페이지)
+ 
+ 🔗 http://esthersony.dothome.co.kr/sonyrenewal/ 
  
 
 <img src="sonyrenewal/img/sonySeo.jpg">
@@ -50,3 +51,7 @@
 
 ## ⚙ 개발도구(IDE)
 - VScode
+- figma
+- Adobe XD
+- Illustrator
+- Photoshop
