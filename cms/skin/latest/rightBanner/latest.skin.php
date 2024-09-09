@@ -10,7 +10,7 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
 ?>
 
 
-<div class="rightBananer d-flex flex-xl-column justify-content-between mt-3 mt-xl-0 ">
+<div class="rightBananer d-none  d-xxl-flex flex-xxl-column justify-content-between mt-4 mt-xxl-0 ">
 
 
 <?php
