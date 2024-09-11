@@ -3,10 +3,12 @@
    include_once("./top.php"); 
 
 ?>
+
         <section id="banner">
             <div class="inner mx-auto  d-xxl-flex justify-content-between">
                 <?php include_once("./main/mainSwiper.php"); ?>
                 <?php echo latest('rightBanner','mainRightbanner',2, 100); ?>
+                <!-- 게시판으로 관리 가능하다 - latest 폴더 안에 'rightBanner'-> 스킨이름 'mainRightbanner' -> 게시판이름 -->
             </div>
         </section>
 
@@ -17,6 +19,8 @@
                 <!-- mainproduct_swiper -->
                 <?php echo latest('mainpro','mainproduct_swiper',5, 100); ?>           
         </section>
+
+        
 
 
         <!-- ps5 홍보비디오 -->

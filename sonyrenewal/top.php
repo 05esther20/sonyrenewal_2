@@ -55,7 +55,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 
     <!-- 커스터마이징 -->
     <link rel="stylesheet" href="/sonyrenewal/css/common.min.css">
-    <link rel="stylesheet" href="/sonyrenewal/css/est.min.css">
+    <link rel="stylesheet" href="/sonyrenewal/css/est.min.css?v=<?php echo time(); ?>">
 
     <link rel="stylesheet" href="/sonyrenewal/css/rwd.min.css">
 </head>
@@ -66,16 +66,23 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
     }
     ?>
 
-    <!-- 헤더 -->
+    <!-- 띠배너 -->
+    <?php echo latest('basicText','topEvent',1, 100); ?>
+
+        <!-- 헤더 -->
         <header id="hd" class="position-relative zup bg-white  "> 
-            <div class="inner py-4 navbar navbar-expand-lg align-items-center justify-content-between mx-auto">
-                <h1 class="mainlogo order-2 order-lg-1"><a href="/sonyrenewal" class="d-block"><img src="/sonyrenewal/img/svg/sonyMainlogo.svg" alt="" class="d-block"></a></h1>
+            <div class="inner py-4 navbar navbar-expand-xl align-items-center justify-content-between mx-auto">
+                <h1 class="mainlogo order-2 order-xl-1">
+                    <a href="/sonyrenewal" class="d-block">
+                        <img src="/sonyrenewal/img/svg/sonyMainlogo.svg" alt="" class="d-block">
+                    </a>
+                </h1>
                
                 <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- ul.gnb>li*5>a{대메뉴$} -->
-                <div class="collapse navbar-collapse order-lg-2" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse order-xl-2" id="navbarSupportedContent">
 
                 <ul class="gnb ps-0 mb-0 mx-auto d-lg-flex  mt-2">   
 
