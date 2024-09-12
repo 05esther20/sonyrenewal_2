@@ -22,10 +22,10 @@
 트랜디하면서도 신뢰감을 주는 디자인으로 리뉴얼하게 되었습니다. 
 
 ## 웹 인터페이스
-<img src="sonyrenewal/img/w.png">
+<img src="https://github.com/05esther20/sonyrenewal_2/blob/main/img/w.png">
 
 ## 모바일 인터페이스
-<img src="sonyrenewal/img/m.png">
+<img src="https://github.com/05esther20/sonyrenewal_2/blob/main/img/m.png">
 
 
 
@@ -34,9 +34,9 @@
 ## 🗓 개발 기간 및 작업 관리
 
 ### 개발 기간
-> 전체 기획 및 개발 기간 : 2024-03 ~ 2024-05  
-> UI 디자인 : 2024-03 ~ 2024-03.07  
-> 기능(html/css) 구현 : 2024-03.07 ~ 2024-05.07 
+> 전체 기획 및 개발 기간 : 2024.03 ~ 2024.05  
+> UI 디자인 : 2024.03 ~ 2024.03.07  
+> 기능(html/css) 구현 : 2024.03.07 ~ 2024.05.07 
 
 ### 작업 관리
 > figma로 간단한 기획서를 제작한뒤 리뉴얼 디자인을 했습니다.<br>
@@ -50,7 +50,7 @@
 
 
 ## 💬 사용언어
-- html / scss / bootstrap 그리드 시스템을 사용을 통한 빠른 반응형 제작 /javascript
+- html / scss / bootstrap 그리드 시스템을 사용을 통한 빠른 반응형 제작
 - javascript
 - 그누보드
 
