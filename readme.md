@@ -39,11 +39,12 @@
 > 기능(html/css) 구현 : 2024.03.07 ~ 2024.05.07 
 
 ### 작업 관리
-> figma로 간단한 기획서를 제작한뒤 리뉴얼 디자인을 했습니다.<br>
+> figma로 기획서를 제작한뒤 리뉴얼 디자인을 했습니다.<br>
     다음으로 관리자 게시판과 내용 관리 설정 후 그누보드 변수를 통한 최근 게시와 게시판을 튜닝함으로써,
-    80% 이상 지속적인 컨텐츠 관리와 업데이트가 편리한 사이트를 제작했습니다.<br>
+    80% 이상 지속적인 컨텐츠 관리와 업데이트가 편리한 사이트를 제작했습니다. 
 
-🔗 figma (https://www.figma.com/design/P82dv0RnNh91sBjZVtrjXl/SONY-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=0-1&t=O3NqZAUB7X2Z29DD-1)
+- 디자인 제작 피그마
+ 🔗 figma (https://www.figma.com/design/P82dv0RnNh91sBjZVtrjXl/SONY-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=0-1&t=O3NqZAUB7X2Z29DD-1)
 
 
 <br/><br/>
