@@ -52,8 +52,8 @@
         <div class="text-center mt-5 pt-5">
             <p class="mb-5 consoletitle">한번도 경험해보지 못한 플레이™ </p>
             <a href="https://www.playstation.com/ko-kr/accessories/"> <img src="./img/ps5Controller.png" class="controllerimg"> </a>
-            <p class="mb-0 mt-5 consoleex">초고속 SSD가 선사하는 빛처럼 빠른 로딩 속도와 햅틱 피드백, 적응형 트리거, 3D오디오가 선사하는 </p>
-            <p class="mb-5 consoleex">더욱 심도 있는 몰입감을 경험하면서 환상적인 차세대 PlayStation 게임을 마음껏 즐겨보세요.</p>
+            <p class="mb-0 mt-5 mb-5 consoleex">초고속 SSD가 선사하는 빛처럼 빠른 로딩 속도와 햅틱 피드백, 적응형 트리거, 3D오디오가 선사하는 <br class='d-none d-sm-block'>
+            더욱 심도 있는 몰입감을 경험하면서 환상적인 차세대 PlayStation 게임을 마음껏 즐겨보세요.</p>
         </div>
 
            <!-- 자세히보기버튼  -->
